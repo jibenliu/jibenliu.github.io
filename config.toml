@@ -1,4 +1,46 @@
-baseURL = "https://jibenliu.github.io/"
-languageCode = "cn-zh"
-title = "jibenliu github website"
-theme = "sam"
+baseurl                  = "https://jibenliu.github.io"           # Your domain name
+languageCode             = "cn-zh"
+defaultContentLanguage   = "cn"
+isMultilingual           = false
+title                    = "jibenliu主页"
+theme                    = "sam"
+pygmentsStyle            = "monokai"                        # https://help.farbox.com/pygments.html
+pygmentsCodefences       = true
+
+[params]
+    dateform             = "Mon Jan 02, 2006"
+    dateformfull         = "Mon Jan 2 2006 15:04:05 EST"
+    favicon              = "sam.ico"
+    homepage             = "首页"                           # What to call the home page link, link will not be rendered if empty
+    footerText           = "jibenliu个人主页"
+
+# Metadata for Open Graph and Twitter
+    description          = "Jibenliu github homepage."               # Max 160 characters show in search results
+    images               = ["tn.png"]                       # Image that shows on Twitter cards and Open Graph links to the site
+    title                = "jibenliu blog"
+
+[[params.videoBackground.sources]]
+    source  = "/sample_video.mp4"
+    type    = "video/mp4"
+    poster  = "/background.png"
+[params.videoBackground]
+    overlay = "rgba(0, 0, 0, 0.4)" # optional
+
+[[params.mainMenu]]
+    link = "languages"
+    text = "语言"
+
+[[params.mainMenu]]
+    link = "tools"
+    text = "工具"
+
+[[params.mainMenu]]
+    link = "os"
+    text = "操作系统"
+
+[[params.mainMenu]]
+    link = "life"
+    text = "生活"
+
+[imaging]
+    quality = 75
