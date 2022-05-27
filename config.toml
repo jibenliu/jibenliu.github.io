@@ -1,5 +1,5 @@
 baseURL = "https://jibenliu.github.io"
-title = "jibenliu personal page"
+title = "jibenliu blog"
 theme = "hugo-coder"
 languageCode = "en"
 defaultContentLanguage = "en"
@@ -10,6 +10,7 @@ pygmentsCodeFencesGuessSyntax = true
 enableEmoji = true
 publishdir = "docs"
 ignoreErrors = ["error-remote-getjson"]
+
 # Enable Disqus comments
 # disqusShortname = "yourdiscussshortname"
 
@@ -36,12 +37,13 @@ customSCSS = []
 # Custom JS
 customJS = []
 
+
 [params.csp]
 childsrc = ["'self'"]
 fontsrc = ["'self'", "https://fonts.gstatic.com", "https://cdn.jsdelivr.net/"]
 formaction = ["'self'"]
 framesrc = ["'self'"]
-imgsrc = ["'unsafe-inline'"]
+imgsrc = ["'self'", "https://www.gravatar.com"]
 objectsrc = ["'none'"]
 stylesrc = [
   "'self'",
