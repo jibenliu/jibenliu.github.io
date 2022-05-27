@@ -19,7 +19,7 @@ author = "jibenliu"
 description = "jibenliu's personal website"
 keywords = "blog,developer,personal"
 info = ["Full Stack DevOps", "Magician"]
-avatarURL = "images/avatar.jpg"
+avatarURL = "./images/avatar.jpg"
 gravatar = "jibenliu@126.com"
 dateFormat = "May 27, 2022"
 since = 2022
@@ -43,7 +43,7 @@ childsrc = ["'self'"]
 fontsrc = ["'self'", "https://fonts.gstatic.com", "https://cdn.jsdelivr.net/"]
 formaction = ["'self'"]
 framesrc = ["'self'"]
-imgsrc = ["'self'", "https://www.gravatar.com"]
+imgsrc = ["'self'", "https://www.gravatar.com","https://avatars.githubusercontent.com"]
 objectsrc = ["'none'"]
 stylesrc = [
   "'self'",
