@@ -1,0 +1,4 @@
+[sectionPagesMenu]
+name = "Golang"
+weight = 2
+url = "golang/"
