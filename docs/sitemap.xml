@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://jibenliu.github.io/about/</loc>
+    <lastmod>2022-05-27T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://jibenliu.github.io/categories/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
@@ -38,16 +41,16 @@
     <loc>https://jibenliu.github.io/series/themes-guide/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jibenliu.github.io/posts/more-rich-content/</loc>
+    <loc>https://jibenliu.github.io/tags/shortcodes/</loc>
+    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jibenliu.github.io/tags/text/</loc>
     <lastmod>2019-03-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jibenliu.github.io/posts/placeholder-text/</loc>
     <lastmod>2019-03-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jibenliu.github.io/tags/shortcodes/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://jibenliu.github.io/tags/text/</loc>
+    <loc>https://jibenliu.github.io/posts/more-rich-content/</loc>
     <lastmod>2019-03-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jibenliu.github.io/posts/math-typesetting/</loc>
@@ -65,17 +68,14 @@
     <loc>https://jibenliu.github.io/categories/development/</loc>
     <lastmod>2019-03-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jibenliu.github.io/posts/hugo-coder-wiki/</loc>
+    <loc>https://jibenliu.github.io/tags/hugo/</loc>
     <lastmod>2019-03-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jibenliu.github.io/tags/hugo/</loc>
+    <loc>https://jibenliu.github.io/posts/hugo-coder-wiki/</loc>
     <lastmod>2019-03-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jibenliu.github.io/tags/themes/</loc>
     <lastmod>2019-03-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://jibenliu.github.io/about/</loc>
-    <lastmod>2019-02-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jibenliu.github.io/authors/</loc>
   </url><url>

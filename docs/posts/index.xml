@@ -8,7 +8,7 @@
     <language>en</language>
     <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://jibenliu.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Markdown Syntax Guide</title>
+      <title>Markdown 语法指导</title>
       <link>https://jibenliu.github.io/posts/markdown-syntax/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
@@ -17,16 +17,7 @@
     </item>
     
     <item>
-      <title>More Rich Content</title>
-      <link>https://jibenliu.github.io/posts/more-rich-content/</link>
-      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://jibenliu.github.io/posts/more-rich-content/</guid>
-      <description>&lt;p&gt;Hugo Coder provides some Custom Shortcodes.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Placeholder Text</title>
+      <title>占位符文本</title>
       <link>https://jibenliu.github.io/posts/placeholder-text/</link>
       <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
       
@@ -35,7 +26,16 @@
     </item>
     
     <item>
-      <title>Math Typesetting</title>
+      <title>富文本</title>
+      <link>https://jibenliu.github.io/posts/more-rich-content/</link>
+      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://jibenliu.github.io/posts/more-rich-content/</guid>
+      <description>&lt;p&gt;Hugo Coder provides some Custom Shortcodes.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>数学表达式</title>
       <link>https://jibenliu.github.io/posts/math-typesetting/</link>
       <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
       
@@ -44,7 +44,7 @@
     </item>
     
     <item>
-      <title>Emoji Support</title>
+      <title>Emoji支持</title>
       <link>https://jibenliu.github.io/posts/emoji-support/</link>
       <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
       
@@ -53,7 +53,7 @@
     </item>
     
     <item>
-      <title>External Page: Hugo Coder Wiki</title>
+      <title>hugo开发wiki</title>
       <link>https://jibenliu.github.io/posts/hugo-coder-wiki/</link>
       <pubDate>Mon, 04 Mar 2019 00:00:00 +0000</pubDate>
       
