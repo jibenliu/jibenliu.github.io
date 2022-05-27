@@ -41,7 +41,7 @@ childsrc = ["'self'"]
 fontsrc = ["'self'", "https://fonts.gstatic.com", "https://cdn.jsdelivr.net/"]
 formaction = ["'self'"]
 framesrc = ["'self'"]
-imgsrc = []
+imgsrc = ["'unsafe-inline'"]
 objectsrc = ["'none'"]
 stylesrc = [
   "'self'",
