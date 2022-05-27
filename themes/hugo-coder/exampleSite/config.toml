@@ -77,7 +77,6 @@ formaction = ["'self'"]
 framesrc = ["'self'"]
 imgsrc = ["'self'"]
 objectsrc = ["'none'"]
-publishdir = "docs"
 stylesrc = [
   "'self'",
   "'unsafe-inline'",

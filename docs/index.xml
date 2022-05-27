@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>jibenliu主页</title>
+    <link>https://jibenliu.github.io/</link>
+    <description>Recent content on jibenliu主页</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language><atom:link href="https://jibenliu.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>语言</title>
+      <link>https://jibenliu.github.io/languages/</link>
+      <pubDate>Thu, 26 May 2022 21:34:07 +0800</pubDate>
+      
+      <guid>https://jibenliu.github.io/languages/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
