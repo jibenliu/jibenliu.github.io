@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
+
+    
+      <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; block-all-mixed-content; default-src 'self'; child-src 'self'; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net/; form-action 'self'; frame-src 'self'; img-src 'self' https://www.gravatar.com https://avatars.githubusercontent.com; object-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://cdn.jsdelivr.net/; script-src 'self' 'unsafe-inline' https://www.google-analytics.com https://cdn.jsdelivr.net/; prefetch-src 'self'; connect-src 'self' https://www.google-analytics.com;">
+
+    
+
+    <meta name="author" content="jibenliu">
+    <meta name="description" content="golang syntax">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="语法基础"/>
+<meta name="twitter:description" content="golang syntax"/>
+
+    <meta property="og:title" content="语法基础" />
+<meta property="og:description" content="golang syntax" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://jibenliu.github.io/languages/golang/syntax/" /><meta property="article:section" content="languages" />
+<meta property="article:published_time" content="2022-05-27T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-05-27T00:00:00+00:00" />
+
+
+
+    <title>
+  语法基础 · jibenliu blog
+</title>
+
+    
+      <link rel="canonical" href="https://jibenliu.github.io/languages/golang/syntax/">
+    
+
+    <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.d9fddbffe6f27e69985dc5fe0471cdb0e57fbf4775714bc3d847accb08f4a1f6.css" integrity="sha256-2f3b/&#43;byfmmYXcX&#43;BHHNsOV/v0d1cUvD2Eesywj0ofY=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="/css/coder-dark.min.002ee2378e14c7a68f1f0a53d9694ed252090987c4e768023fac694a4fc5f793.css" integrity="sha256-AC7iN44Ux6aPHwpT2WlO0lIJCYfE52gCP6xpSk/F95M=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    <meta name="generator" content="Hugo 0.100.0-DEV" />
+  </head>
+
+  
+  
+    
+  
+  <body class="preload-transitions colorscheme-dark">
+    
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      jibenliu blog
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">关于</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/languages/">语言</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/algorithm/">算法</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/tools/">工具</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/projects/">项目</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/contact/">联系我</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container page">
+  <article>
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="https://jibenliu.github.io/languages/golang/syntax/">
+          语法基础
+        </a>
+      </h1>
+    </header>
+
+    <h2 id="基础语法">
+  基础语法
+  <a class="heading-link" href="#%e5%9f%ba%e7%a1%80%e8%af%ad%e6%b3%95">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<ul>
+<li>golang一个包内不允许有重复的函数，且即使是包分在多个文件里面也不允许出现两个同名函数和属性。</li>
+<li>golang函数是大小写敏感的，所以可以有
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>    <span style="font-weight:bold">func</span> getName() <span style="">string</span>{}
+</span></span><span style="display:flex;"><span>    <span style="font-weight:bold">func</span> GetName() <span style="">string</span>{}
+</span></span></code></pre></div></li>
+<li>go区分大小写，首字母大写表示public属性，首字母小写表示private属性（包外无法访问）</li>
+<li>第一个{必须紧跟在括号的后面，不能新起一行</li>
+<li>编译部分文件时需要把所有文件都放置于 build(run) 后面，不分先后顺序</li>
+<li>在函数有多个返回值时，只要有一个返回值有命名，其他的也必须命名。如果有多个返回值必须加上括号()；如果只有一个返回值且命名也必须加上括号()</li>
+<li>append() 的第二个参数不能直接使用 slice，需使用 … 操作符，将一个切片追加到另一个切片上：append(s1,s2…), 或者直接跟上元素，形如：append(s1,1,2,3)</li>
+<li>短变量 x := 100 使用有限制:
+<ol>
+<li>必须使用显示初始化；</li>
+<li>不能提供数据类型，编译器会自动推导；</li>
+<li>只能在 <em><strong><!-- raw HTML omitted -->函数内部<!-- raw HTML omitted --></strong></em> 使用；</li>
+</ol>
+</li>
+<li>单个字符串用单引号，多个字符串用`或者&quot;来括起来
+<ul>
+<li>使用 &quot;&quot; 包裹的字符串 会解析 字符串中的 转义符</li>
+<li>使用 `` 包裹的字符串 不会解析 字符串中的 转义符</li>
+<li>使用 &quot;&quot; 包裹的字符串 性能 比较慢 到 极慢（由 转义符 和 字符串的长度 决定）</li>
+<li>使用 `` 包裹的字符串 性能 极快</li>
+<li>字符串 实际上是 字符数组</li>
+<li>解析 会 遍历 整一个 字符串 (字符数组)，寻找可以 解析 的 转义符，不管 原先字符串里 有没有 转义符，都会 遍历一次</li>
+<li>不解析 则会 直接输出</li>
+</ul>
+</li>
+<li>nil 只能赋值给指针、chan、func、interface、map 或 slice 类型的变量（error是内置接口类型）</li>
+<li>init 函数
+<ul>
+<li>init() 函数是用于程序执行前做包的初始化的函数，比如初始化包里的变量等;</li>
+<li>一个包可以出线多个 init() 函数,一个源文件也可以包含多个 init() 函数；</li>
+<li>同一个包中多个 init() 函数的执行顺序没有明确定义，但是不同包的init函数是根据包导入的依赖关系决定的（看下图）;</li>
+<li>init() 函数在代码中不能被显示调用、不能被引用（赋值给函数变量），否则出现编译错误;</li>
+<li>一个包被引用多次，如 A import B,C import B,A import C，B 被引用多次，但 B 包只会初始化一次；</li>
+<li>引入包，不可出现死循坏。即 A import B,B import A，这种情况编译失败；</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="new和make区别">
+  new和make区别
+  <a class="heading-link" href="#new%e5%92%8cmake%e5%8c%ba%e5%88%ab">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<ul>
+<li>new(T) 会为 T 类型的新值分配已置零的内存空间，并返回地址（指针），即类型为 *T 的值。换句话说就是，返回一个指针，该指针指向新分配的、类型为 T 的零值。适用于值类型，如数组、结构体等。</li>
+<li>make(T,args) 返回初始化之后的 T 类型的值，这个值并不是 T 类型的零值，也不是指针 *T，是经过初始化之后的 T 的引用。make() 只适用于 slice、map 和 channel</li>
+</ul>
+<hr>
+<h2 id="切片和数组">
+  切片和数组
+  <a class="heading-link" href="#%e5%88%87%e7%89%87%e5%92%8c%e6%95%b0%e7%bb%84">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<ul>
+<li>数组是需要指定个数的，而切片则不需要。数组赋值也可是使用如下方式，忽略元素个数，使用“&hellip;”代替</li>
+<li>Go中的数组是值类型，换句话说，如果你将一个数组赋值给另外一个数组，那么，实际上就是将整个数组拷贝一份</li>
+<li>如果Go中的数组作为函数的参数，那么实际传递的参数是一份数组的拷贝，而不是数组的指针</li>
+<li>array的长度也是Type的一部分，这样就说明[10]int和[20]int是不一样的</li>
+<li>切片是引用类型，因此在当传递切片时将引用同一指针，修改值将会影响其他的对象</li>
+<li>[start:end] 是一个左闭右开区间,</li>
+<li>切片可以支持第三个参数，用来限制新切片的容量，不能超过原切片的底层数组大小</li>
+</ul>
+<hr>
+<h2 id="多层map赋值">
+  多层map赋值
+  <a class="heading-link" href="#%e5%a4%9a%e5%b1%82map%e8%b5%8b%e5%80%bc">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>类似以下这种二维结构，需要单独make子结构</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>userBindInfo := make(<span style="font-weight:bold">map</span>[<span style="">string</span>]<span style="font-weight:bold">map</span>[<span style="">string</span>]<span style="font-weight:bold">interface</span>{})
+</span></span><span style="display:flex;"><span><span style="font-style:italic">//tel is bind
+</span></span></span><span style="display:flex;"><span><span style="font-style:italic"></span>userBindInfo[<span style="font-style:italic">&#34;tel&#34;</span>] = make(<span style="font-weight:bold">map</span>[<span style="">string</span>]<span style="font-weight:bold">interface</span>{})
+</span></span><span style="display:flex;"><span>userBindInfo[<span style="font-style:italic">&#34;tel&#34;</span>][<span style="font-style:italic">&#34;isbind&#34;</span>] = 1
+</span></span><span style="display:flex;"><span>userBindInfo[<span style="font-style:italic">&#34;tel&#34;</span>][<span style="font-style:italic">&#34;name&#34;</span>] = <span style="font-style:italic">&#34;155****1234&#34;</span>
+</span></span><span style="display:flex;"><span><span style="font-style:italic">//wechat is bind
+</span></span></span><span style="display:flex;"><span><span style="font-style:italic"></span>userBindInfo[<span style="font-style:italic">&#34;wx&#34;</span>] = make(<span style="font-weight:bold">map</span>[<span style="">string</span>]<span style="font-weight:bold">interface</span>{})
+</span></span><span style="display:flex;"><span>userBindInfo[<span style="font-style:italic">&#34;wx&#34;</span>][<span style="font-style:italic">&#34;isbind&#34;</span>] = 0
+</span></span><span style="display:flex;"><span>userBindInfo[<span style="font-style:italic">&#34;wx&#34;</span>][<span style="font-style:italic">&#34;name&#34;</span>] = <span style="font-style:italic">&#34;&#34;</span>
+</span></span></code></pre></div><h2 id="深拷贝-浅拷贝">
+  深拷贝 浅拷贝
+  <a class="heading-link" href="#%e6%b7%b1%e6%8b%b7%e8%b4%9d-%e6%b5%85%e6%8b%b7%e8%b4%9d">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<ul>
+<li>通过=操作符拷贝切片，这是浅拷贝。</li>
+<li>通过[:]方式复制切片，同样是浅拷贝</li>
+<li>copy() 拷贝是切片深拷贝</li>
+</ul>
+<h2 id="for-range">
+  for range
+  <a class="heading-link" href="#for-range">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<ul>
+<li>range 返回的是值的拷贝，而不是引用</li>
+<li>range 遍历 map 是无序的</li>
+</ul>
+<h2 id="判断某个struct是否实现了某个interface">
+  判断某个struct是否实现了某个interface
+  <a class="heading-link" href="#%e5%88%a4%e6%96%ad%e6%9f%90%e4%b8%aastruct%e6%98%af%e5%90%a6%e5%ae%9e%e7%8e%b0%e4%ba%86%e6%9f%90%e4%b8%aainterface">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<ul>
+<li>判断某个结构体（即有些人称之为类）是否实现了某个接口类型</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="font-weight:bold">var</span> _  IFace =new(Bird)  或者 <span style="font-weight:bold">var</span> _ IFace = (*Bird)(<span style="font-weight:bold">nil</span>)
+</span></span></code></pre></div><p>解析：这个其实就是变量定义，var  变量名  类型 = 赋值，上面中的 _ 其实就是舍去变量不要，假如实现了接口类型，编译就可以通过，没有现实编译就会出错，就是根据这个原理来实现的。
+至于第二种写法与第一种的区别就是，第二种不需要分配内存就达到目的，而第一种是需要分配内存的。</p>
+
+  </article>
+</section>
+
+  
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    ©
+    
+    2022
+     jibenliu 
+    ·
+    
+    Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/jibenliu">Coder</a>.
+    
+  </section>
+</footer>
+
+    </main>
+
+    
+      
+      <script src="/js/coder.min.8fb86376a16e684af472a329aef502dbebcfab65ce264e9750d144912947c602.js" integrity="sha256-j7hjdqFuaEr0cqMprvUC2&#43;vPq2XOJk6XUNFEkSlHxgI="></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  </body>
+
+</html>

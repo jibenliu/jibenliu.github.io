@@ -6,16 +6,45 @@
     <description>Recent content on jibenliu blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://jibenliu.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 27 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jibenliu.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>关于我</title>
-      <link>https://jibenliu.github.io/about/</link>
+      <title>关于</title>
+      <link>https://jibenliu.github.io/algorithm/language/</link>
       <pubDate>Fri, 27 May 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://jibenliu.github.io/about/</guid>
+      <guid>https://jibenliu.github.io/algorithm/language/</guid>
       <description>Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.0. Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
 Hugo makes use of a variety of open source projects including:
 https://github.com/yuin/goldmark https://github.</description>
+    </item>
+    
+    <item>
+      <title>关于</title>
+      <link>https://jibenliu.github.io/tools/language/</link>
+      <pubDate>Fri, 27 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jibenliu.github.io/tools/language/</guid>
+      <description>Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.0. Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
+Hugo makes use of a variety of open source projects including:
+https://github.com/yuin/goldmark https://github.</description>
+    </item>
+    
+    <item>
+      <title>环境安装</title>
+      <link>https://jibenliu.github.io/languages/golang/env/</link>
+      <pubDate>Fri, 27 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jibenliu.github.io/languages/golang/env/</guid>
+      <description>安装 基础安装 sudo apt install golang gvm多版本管理 // gvm 安装 bash &amp;lt; &amp;lt;(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer) // gvm 组件依赖bison安装 sudo apt install bison // gvm安装指定版本 gvm install go1.18 // 切换到指定版本 gvm use go1.18 // 切换后设置为环境变量 gvm use go1.18 --default 设置中国镜像 go env -w export GOPROXY=https://goproxy.io 或者 go env -w export GOPROXY=https://goproxy.cn 关闭sum校验 go env -w GOSUMDB=off 设置私有代理 go env -w GOPRIVATE=*.gitlab.com,*.gitee.com 初始化项目 mkdir demo cd demo go mod init demo // 添加import包 // .</description>
+    </item>
+    
+    <item>
+      <title>语法基础</title>
+      <link>https://jibenliu.github.io/languages/golang/syntax/</link>
+      <pubDate>Fri, 27 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://jibenliu.github.io/languages/golang/syntax/</guid>
+      <description>基础语法 golang一个包内不允许有重复的函数，且即使是包分在多个文件里面也不允许出现两个同名函数和属性。 golang函数是大小写敏感的，所以可以有 func getName() string{} func GetName() string{} go区分大小写，首字母大写表示public属性，首字母小写表示private属性（包外无法访问） 第一个{必须紧跟在括号的后面，不能新起一行 编译部分文件时需要把所有文件都放置于 build(run) 后面，不分先后顺序 在函数有多个返回值时，只要有一个返回值有命名，其他的也必须命名。如果有多个返回值必须加上括号()；如果只有一个返回值且命名也必须加上括号() append() 的第二个参数不能直接使用 slice，需使用 … 操作符，将一个切片追加到另一个切片上：append(s1,s2…), 或者直接跟上元素，形如：append(s1,1,2,3) 短变量 x := 100 使用有限制: 必须使用显示初始化； 不能提供数据类型，编译器会自动推导； 只能在 函数内部 使用； 单个字符串用单引号，多个字符串用`或者&amp;quot;来括起来 使用 &amp;quot;&amp;quot; 包裹的字符串 会解析 字符串中的 转义符 使用 `` 包裹的字符串 不会解析 字符串中的 转义符 使用 &amp;quot;&amp;quot; 包裹的字符串 性能 比较慢 到 极慢（由 转义符 和 字符串的长度 决定） 使用 `` 包裹的字符串 性能 极快 字符串 实际上是 字符数组 解析 会 遍历 整一个 字符串 (字符数组)，寻找可以 解析 的 转义符，不管 原先字符串里 有没有 转义符，都会 遍历一次 不解析 则会 直接输出 nil 只能赋值给指针、chan、func、interface、map 或 slice 类型的变量（error是内置接口类型） init 函数 init() 函数是用于程序执行前做包的初始化的函数，比如初始化包里的变量等; 一个包可以出线多个 init() 函数,一个源文件也可以包含多个 init() 函数； 同一个包中多个 init() 函数的执行顺序没有明确定义，但是不同包的init函数是根据包导入的依赖关系决定的（看下图）; init() 函数在代码中不能被显示调用、不能被引用（赋值给函数变量），否则出现编译错误; 一个包被引用多次，如 A import B,C import B,A import C，B 被引用多次，但 B 包只会初始化一次； 引入包，不可出现死循坏。即 A import B,B import A，这种情况编译失败； new和make区别 new(T) 会为 T 类型的新值分配已置零的内存空间，并返回地址（指针），即类型为 *T 的值。换句话说就是，返回一个指针，该指针指向新分配的、类型为 T 的零值。适用于值类型，如数组、结构体等。 make(T,args) 返回初始化之后的 T 类型的值，这个值并不是 T 类型的零值，也不是指针 *T，是经过初始化之后的 T 的引用。make() 只适用于 slice、map 和 channel 切片和数组 数组是需要指定个数的，而切片则不需要。数组赋值也可是使用如下方式，忽略元素个数，使用“&amp;hellip;”代替 Go中的数组是值类型，换句话说，如果你将一个数组赋值给另外一个数组，那么，实际上就是将整个数组拷贝一份 如果Go中的数组作为函数的参数，那么实际传递的参数是一份数组的拷贝，而不是数组的指针 array的长度也是Type的一部分，这样就说明[10]int和[20]int是不一样的 切片是引用类型，因此在当传递切片时将引用同一指针，修改值将会影响其他的对象 [start:end] 是一个左闭右开区间, 切片可以支持第三个参数，用来限制新切片的容量，不能超过原切片的底层数组大小 多层map赋值 类似以下这种二维结构，需要单独make子结构</description>
     </item>
     
     <item>
@@ -70,6 +99,17 @@ https://github.com/yuin/goldmark https://github.</description>
       
       <guid>https://jibenliu.github.io/posts/hugo-coder-wiki/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>关于</title>
+      <link>https://jibenliu.github.io/about/</link>
+      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://jibenliu.github.io/about/</guid>
+      <description>Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.0. Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
+Hugo makes use of a variety of open source projects including:
+https://github.com/yuin/goldmark https://github.</description>
     </item>
     
     <item>

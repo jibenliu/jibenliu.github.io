@@ -2,7 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://jibenliu.github.io/about/</loc>
+    <loc>https://jibenliu.github.io/algorithm/</loc>
+    <lastmod>2022-05-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jibenliu.github.io/</loc>
+    <lastmod>2022-05-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jibenliu.github.io/languages/</loc>
+    <lastmod>2022-05-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jibenliu.github.io/tags/shortcodes/</loc>
+    <lastmod>2022-05-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jibenliu.github.io/tags/</loc>
+    <lastmod>2022-05-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jibenliu.github.io/tools/</loc>
+    <lastmod>2022-05-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jibenliu.github.io/algorithm/language/</loc>
+    <lastmod>2022-05-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jibenliu.github.io/tools/language/</loc>
+    <lastmod>2022-05-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jibenliu.github.io/languages/golang/env/</loc>
+    <lastmod>2022-05-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jibenliu.github.io/languages/golang/syntax/</loc>
     <lastmod>2022-05-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jibenliu.github.io/categories/</loc>
@@ -12,9 +39,6 @@
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jibenliu.github.io/tags/html/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://jibenliu.github.io/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jibenliu.github.io/tags/markdown/</loc>
@@ -32,17 +56,11 @@
     <loc>https://jibenliu.github.io/categories/syntax/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jibenliu.github.io/tags/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://jibenliu.github.io/categories/themes/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jibenliu.github.io/series/themes-guide/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://jibenliu.github.io/tags/shortcodes/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jibenliu.github.io/tags/text/</loc>
     <lastmod>2019-03-09T00:00:00+00:00</lastmod>
@@ -76,6 +94,9 @@
   </url><url>
     <loc>https://jibenliu.github.io/tags/themes/</loc>
     <lastmod>2019-03-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jibenliu.github.io/about/</loc>
+    <lastmod>2019-02-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jibenliu.github.io/authors/</loc>
   </url><url>

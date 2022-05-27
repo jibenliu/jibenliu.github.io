@@ -19,8 +19,8 @@ author = "jibenliu"
 description = "jibenliu's personal website"
 keywords = "blog,developer,personal"
 info = ["Full Stack DevOps", "Magician"]
-avatarURL = "./images/avatar.jpg"
-gravatar = "jibenliu@126.com"
+avatarURL = "https://avatars.githubusercontent.com/u/49552025?s=400&u=b393a68217a57f09ce079fb10b6c9281334f3024&v=4"
+#gravatar = "jibenliu"
 dateFormat = "2006-01-02"
 since = 2022
 commit = "https://github.com/jibenliu"
@@ -88,16 +88,26 @@ weight = 1
 url = "about/"
 
 [[languages.en.menu.main]]
-name = "博客"
+name = "语言"
 weight = 2
-url = "posts/"
+url = "languages/"
+
+[[languages.en.menu.main]]
+name = "算法"
+weight = 3
+url = "algorithm/"
+
+[[languages.en.menu.main]]
+name = "工具"
+weight = 4
+url = "tools/"
 
 [[languages.en.menu.main]]
 name = "项目"
-weight = 3
+weight = 5
 url = "projects/"
 
 [[languages.en.menu.main]]
 name = "联系我"
-weight = 5
+weight = 6
 url = "contact/"
