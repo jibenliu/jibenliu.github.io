@@ -1,5 +1,5 @@
 .idea/
 .vscode/
+.DS_Store
 .hugo_build.lock
 node_modules
-node_modules/*

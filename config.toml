@@ -1,11 +1,12 @@
 baseurl                  = "https://jibenliu.github.io"           # Your domain name
-languageCode             = "cn-zh"
-defaultContentLanguage   = "cn"
+languageCode             = "zh-cn"
+defaultContentLanguage   = "zh-cn"
 isMultilingual           = false
 title                    = "jibenliu主页"
 theme                    = "sam"
 pygmentsStyle            = "monokai"                        # https://help.farbox.com/pygments.html
 pygmentsCodefences       = true
+publishDir = "docs"
 
 [params]
     dateform             = "Mon Jan 02, 2006"
