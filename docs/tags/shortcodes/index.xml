@@ -1,28 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>shortcodes on jibenliu blog</title>
+    <title>shortcodes on 演示站点</title>
     <link>https://jibenliu.github.io/tags/shortcodes/</link>
-    <description>Recent content in shortcodes on jibenliu blog</description>
+    <description>Recent content in shortcodes on 演示站点</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Fri, 27 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jibenliu.github.io/tags/shortcodes/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Sun, 10 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://jibenliu.github.io/tags/shortcodes/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>环境安装</title>
-      <link>https://jibenliu.github.io/languages/golang/env/</link>
-      <pubDate>Fri, 27 May 2022 00:00:00 +0000</pubDate>
+      <title>Rich Content</title>
+      <link>https://jibenliu.github.io/p/rich-content/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://jibenliu.github.io/languages/golang/env/</guid>
-      <description>安装 基础安装 sudo apt install golang gvm多版本管理 // gvm 安装 bash &amp;lt; &amp;lt;(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer) // gvm 组件依赖bison安装 sudo apt install bison // gvm安装指定版本 gvm install go1.18 // 切换到指定版本 gvm use go1.18 // 切换后设置为环境变量 gvm use go1.18 --default 设置中国镜像 go env -w export GOPROXY=https://goproxy.io 或者 go env -w export GOPROXY=https://goproxy.cn 关闭sum校验 go env -w GOSUMDB=off 设置私有代理 go env -w GOPRIVATE=*.gitlab.com,*.gitee.com 初始化项目 mkdir demo cd demo go mod init demo // 添加import包 // .</description>
-    </item>
-    
-    <item>
-      <title>富文本</title>
-      <link>https://jibenliu.github.io/posts/more-rich-content/</link>
-      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://jibenliu.github.io/posts/more-rich-content/</guid>
-      <description>&lt;p&gt;Hugo Coder provides some Custom Shortcodes.&lt;/p&gt;</description>
+      <guid>https://jibenliu.github.io/p/rich-content/</guid>
+      <description>&lt;p&gt;Hugo ships with several &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes&#34;&gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;&gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;</description>
     </item>
     
   </channel>
